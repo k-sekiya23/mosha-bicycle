@@ -3,13 +3,61 @@ body {
   font-size: 0.9rem;
 }
 
+.slideinTop {
+  animation: slideIn 1.5s 1;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }  
+  30% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.slideinTop2 {
+  animation: slideIn 2s 1;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+  }  
+  30% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* ヘッダー部分 */
 header {
   height: 60px;
+  width: 100%;
+  background-color: rgb(255, 255, 255,0.8);
+  color: black;
+  position: fixed; 
+  top: 0; 
+  z-index: 10;
+}
+
+.hdr-wrapper {
+  max-width: 960px;
+  padding: 0 4%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin: 0 auto;
+  text-align: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -52,13 +100,33 @@ header {
   object-fit: cover;
 }
 
+.main-img p {
+  font-size: 2rem;
+  position: relative;
+	top: -50px;
+	left: 2rem;
+	z-index: 3;
+}
+
+.main-img span {
+  color: rgb(255, 255, 255);
+}
+
 .section-title {
   display: inline-block;
   font-weight: bold;
   font-size: 2rem;
+  font-weight: bold;
   text-align: center;
   border-bottom: 1px solid #383e45;
   margin-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .main-img p {
+    font-size: 1.4rem;
+    left: 0.5rem;
+  }
 }
 
 /* about部分 */
@@ -87,7 +155,7 @@ header {
 }
 
 .content p {
-  line-height: 1.4;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 600px) {

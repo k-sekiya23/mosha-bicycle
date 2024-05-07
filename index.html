@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>模写コーディング入門　part1</title>
-  <!-- https://code-jump.com/coding-recommend/ を参考 -->
+  <title>模写コーディング　part1</title>
+  <!-- https://code-jump.com/coding-recommend/ を参考に模写 -->
 
   <!-- リセットCSS読み込み -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
@@ -12,29 +12,32 @@
 </head>
 
 <body>
-  <header class="wrapper">
-    <h1 class="header-logo">
-      <a href="index.html">
-        <img src="img/logo.svg" alt="ロゴ">
-      </a>
-    </h1>
-
-    <nav class="hdr-nav">
-      <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
-
-        <li>
-          <a href="#bicycle">Bicycle</a>
-        </li>
-      </ul>
-    </nav>
+  <header>
+    <div class="hdr-wrapper">
+      <h1 class="header-logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="ロゴ">
+        </a>
+      </h1>
+  
+      <nav class="hdr-nav">
+        <ul>
+          <li>
+            <a href="#about">About</a>
+          </li>
+  
+          <li>
+            <a href="#bicycle">Bicycle</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <div class="main-img">
+    <div class="main-img slideinTop">
       <img src="img/mainvisual.jpg" alt="メイン画像">
+      <p>素敵な<span>"ロードバイク"</span>に出会おう</p>
     </div>
 
     <section id="about" class="wrapper">
@@ -86,5 +89,7 @@
   <footer>
     <p>© 2020 Profile</p>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
