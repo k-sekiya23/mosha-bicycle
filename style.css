@@ -1,10 +1,22 @@
 body {
   color: #383e45;
   font-size: 0.9rem;
+  /*スクロールバー非表示（IE・Edge）*/
+  -ms-overflow-style: none;
+  /*スクロールバー非表示（Firefox）*/
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar{
+  display:none;
 }
 
 .slideinTop {
   animation: slideIn 1.5s 1;
+}
+
+.slideinTop2 {
+  animation: slideIn 2s 1;
 }
 
 @keyframes slideIn {

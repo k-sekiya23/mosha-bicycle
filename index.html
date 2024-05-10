@@ -6,6 +6,8 @@
   <title>模写コーディング　part1</title>
   <!-- https://code-jump.com/coding-recommend/ を参考に模写 -->
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- リセットCSS読み込み -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css"/>
   <link rel="stylesheet" href="style.css">
@@ -37,14 +39,14 @@
   <main>
     <div class="main-img slideinTop">
       <img src="img/mainvisual.jpg" alt="メイン画像">
-      <p>素敵な<span>"ロードバイク"</span>に出会おう</p>
+      <p class="slideinTop2">素敵な<span>"ロードバイク"</span>に出会おう</p>
     </div>
 
     <section id="about" class="wrapper">
-      <h2 class="section-title">About</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-offset="10"  data-aos-duration="1500">About</h2>
 
-      <div class="about-main">
-        <img src="img/about.jpg" alt="プロフ画像">
+      <div class="about-main" data-aos="fade-up" data-aos-offset="10"  data-aos-duration="1500">
+        <img src="img/prof.jpg" alt="プロフ画像">
         <div class="content">
           <h3 class="content-title">KENTA SEKIYA</h3>
           <p>テキストテキストテキストテキストテキストテキストテキスト<br>
@@ -55,31 +57,31 @@
     </section>
 
     <section id="bicycle" class="wrapper">
-      <h2 class="section-title">Bicycle</h2>
+      <h2 class="section-title" data-aos="fade-down" data-aos-offset="10"  data-aos-duration="1500">Bicycle</h2>
 
       <div class="content-items">
-        <div class="content-item">
-          <img src="img/bicycle1.jpg" alt="参考画像1">
-          <h3 class="content-title">タイトルタイトル</h3>
-          <p>テキストテキストテキスト
-
-          </p>
+        <div class="content-item" data-aos="fade-up" data-aos-offset="10"  data-aos-duration="1500">
+          <a href="">
+            <img src="img/bicycle1.jpg" alt="参考画像1">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </a>
         </div>
 
-        <div class="content-item">
-          <img src="img/bicycle2.jpg" alt="参考画像2">
-          <h3 class="content-title">タイトルタイトル</h3>
-          <p>テキストテキストテキスト
-
-          </p>
+        <div class="content-item" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1500" data-aos-delay="300">
+          <a href="">
+            <img src="img/bicycle2.jpg" alt="参考画像2">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </a>
         </div>
 
-        <div class="content-item">
-          <img src="img/bicycle3.jpg" alt="参考画像3">
-          <h3 class="content-title">タイトルタイトル</h3>
-          <p>テキストテキストテキスト
-
-          </p>
+        <div class="content-item" data-aos="fade-up" data-aos-offset="10" data-aos-duration="1500" data-aos-delay="600">
+          <a href="">
+            <img src="img/bicycle3.jpg" alt="参考画像3">
+            <h3 class="content-title">タイトルタイトル</h3>
+            <p>テキストテキストテキスト</p>
+          </a>
         </div>
       </div>
     </section>
@@ -90,6 +92,9 @@
     <p>© 2020 Profile</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
