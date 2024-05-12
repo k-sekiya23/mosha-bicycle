@@ -102,6 +102,10 @@ header {
 }
 
 /* main部分 */
+main {
+  position:relative;
+  top: 60px;
+}
 .main-img {
   margin-bottom: 80px;
 }
@@ -206,4 +210,6 @@ footer {
   font-size: 0.5rem;
   padding: 10px 0;
   text-align: center;
+  position:relative;
+  top: 60px;
 }
